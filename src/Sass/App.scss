@@ -1,0 +1,274 @@
+@import './Variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+$headingFont: 'Raleway', sans-serif;
+$bodyFont:'Open Sans', sans-serif;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-size: 62.5%;
+    
+    
+}
+.App{
+    text-align: center;
+}
+.body{
+    font-family: $bodyFont;
+}
+
+.navbar{
+    font-family: $headingFont;
+    font-weight: 400;
+    .container{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        img{
+            width: 100px;
+        }
+        .navbar-menu{
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-evenly;
+            font-size: 1.4rem;
+            color: $very-dark-blue;
+        }
+    }
+    
+}
+.header{
+    margin: 50px 10px;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    font-family:  $headingFont;
+
+    img{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    h2{
+        margin-bottom: 20px;   
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+   .email{
+       display: grid;
+       height: 60px;
+       border-radius: 5px;
+       grid-template-rows: 1fr 1fr;
+       grid-gap:10px;
+       margin-bottom: 20px;
+       button{
+           background-color: $bright-blue;
+           color: white;
+           border: none;
+       }
+   }
+
+
+}
+
+.stay{
+    background-image: (url('../images/bg-curve-mobile.svg'));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+    .container{
+        .stayImage{
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        margin: 20px;
+        display: grid;
+        justify-content: center;
+        .stay-text{
+            h2{
+                margin-bottom: 20px;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+            a{
+                color: $moderate-cyan;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .card{
+        width: 80%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        display: grid;
+        margin: 0 auto;
+        padding: 10px;
+        display: grid;
+        justify-content: start;
+        text-align: start;
+        .quotes{
+            width: 20px;
+            margin-bottom: 5px;
+        }
+        .card-avatar-info{
+            display: flex;
+            flex-direction: row;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+        img{
+            width: 30px;
+            border-radius: 15px;
+            margin-right: 10px;
+        }
+    }
+}
+.access{
+  
+    background-color: $desatured-blue;
+    color: white;
+    
+    
+    .container{
+       margin-top: 20px;
+        padding: 20px;
+        font-family: $headingFont;
+        
+        h2{
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+        p{
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .email{
+            display: grid;
+            height: 60px;
+            border-radius: 5px;
+            grid-template-rows: 1fr 1fr;
+            grid-gap:10px;
+            margin-bottom: 20px;
+            button{
+                background-color: $bright-blue;
+                color: white;
+                border: none;
+            }
+        }
+    }
+}
+.footer{
+    
+    text-align: start;
+    background-color: $very-dark-blue;
+    color: white;
+    .logo{
+        width: 100px;
+        margin: 20px 20px 0 20px;        
+    }
+    .container{
+        padding: 20px;
+        .icon{
+            width: 15px;
+        }
+        p{
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+        .icons{
+            display: flex;
+            justify-content:space-evenly;
+        }
+    }
+}
+@media only screen and (min-width: 701px){
+
+    .navbar .container{
+        margin: 20px;
+    h5{
+        font-size: 1.8rem;
+    }
+    
+    
+    img{
+        width: 150px;
+    
+    }
+    }
+    .header{
+        margin: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "text image";
+
+        img{
+            grid-area: image;
+        }
+        .header-text{
+            grid-area: text;
+        }
+        .email{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+    }
+
+.stay .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-template-areas: "text image";
+
+    .stay-text{
+        grid-area: text;
+    }
+    .stay-image-div{
+        grid-area: image;
+    }
+
+}
+
+.access .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.footer {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        .icons{
+            justify-items: justify-content;
+        }
+    }
+}    
+
+}
+@media only screen and (min-width: 1100px){
+  .footer .logo{
+      margin: 20px 0 0 350px;
+  }
+
+    .header , .navbar .container,  .access .container, .stay .container, .footer .container{
+       width: 70%;
+        margin: 20px auto;
+    }
+
+}
