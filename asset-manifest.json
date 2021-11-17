@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/flyo/static/css/main.2d3174b9.chunk.css",
+    "main.js": "/flyo/static/js/main.5592a270.chunk.js",
+    "main.js.map": "/flyo/static/js/main.5592a270.chunk.js.map",
+    "runtime-main.js": "/flyo/static/js/runtime-main.063c8704.js",
+    "runtime-main.js.map": "/flyo/static/js/runtime-main.063c8704.js.map",
+    "static/js/2.e7fda860.chunk.js": "/flyo/static/js/2.e7fda860.chunk.js",
+    "static/js/2.e7fda860.chunk.js.map": "/flyo/static/js/2.e7fda860.chunk.js.map",
+    "index.html": "/flyo/index.html",
+    "static/css/main.2d3174b9.chunk.css.map": "/flyo/static/css/main.2d3174b9.chunk.css.map",
+    "static/js/2.e7fda860.chunk.js.LICENSE.txt": "/flyo/static/js/2.e7fda860.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/flyo/static/media/bg-curve-mobile.5397c1fb.svg",
+    "static/media/icon-email.19ab894b.svg": "/flyo/static/media/icon-email.19ab894b.svg",
+    "static/media/icon-phone.43c05d1a.svg": "/flyo/static/media/icon-phone.43c05d1a.svg",
+    "static/media/icon-quotes.fefaf075.svg": "/flyo/static/media/icon-quotes.fefaf075.svg",
+    "static/media/illustration-1.61162776.svg": "/flyo/static/media/illustration-1.61162776.svg",
+    "static/media/illustration-2.b324b94f.svg": "/flyo/static/media/illustration-2.b324b94f.svg",
+    "static/media/logo.866a54e8.svg": "/flyo/static/media/logo.866a54e8.svg",
+    "static/media/logowhite.6d7ea58f.svg": "/flyo/static/media/logowhite.6d7ea58f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.063c8704.js",
+    "static/js/2.e7fda860.chunk.js",
+    "static/css/main.2d3174b9.chunk.css",
+    "static/js/main.5592a270.chunk.js"
+  ]
+}
