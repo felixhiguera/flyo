@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from './components/Card';
+import Access from './components/Access';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Stay from './components/Stay';
+
+import './Sass/App.scss'
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Navbar />
+      <Header />
+      <div className="body">
+        <Stay />
+        <Access />
+        <Footer />
+      </div>
+
     </div>
   );
 }
